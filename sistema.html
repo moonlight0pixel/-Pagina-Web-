@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Javascript" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+     <h1 id="titulo">Hola</h1>
+     <P class="texto">Soy un parrafo</P>
+     <button id="miboton"> saludo</button>
+     <input type="text" id="campoNombre" placeholder="nombre">
+
+    <script>
+        const boton=document.querySelector("#miboton")
+        boton.addEventListener("click",()=> {           
+            console.log("boton presionado")
+            alert("listo")
+        })
+        const titulo=document.querySelector("#titulo")
+        //selecciona por id
+        const parrafo=document.querySelector(".texto")
+        //selecciona por clase
+        console.log(titulo.textContent)
+        titulo.textContent="Adios"
+        titulo.style.color="Red"
+
+     </script>
+</body>
+</html>
