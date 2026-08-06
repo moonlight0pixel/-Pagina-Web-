@@ -9,6 +9,3 @@ Un párrafo describiendo por qué eligió Programación : De entre todas las car
 
 <3
 
-Pequeño Resumen De Un Sistema
-
-Este sistema está desarrollado en HTML y JavaScript. Contiene un título, un párrafo, un botón y un campo de texto. Mediante JavaScript, se seleccionan los elementos de la página usando sus identificadores (ID) y clases. Al hacer clic en el botón, el sistema muestra un mensaje en la consola indicando que el botón fue presionado y despliega una alerta con el texto "listo". Además, modifica el contenido del título de "Hola" a "Adios"
