@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santuario de Libros</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <center><h1>Santuario de Libros</h1></center>
+    <ul id="milista"></ul>
+    <img src="wiwiwi.jpg.jpg"
+    <label for="opciones">Opciones</label>
+    <select id="opciones" name="opciones">
+        <option value="Registro">Registro</option>
+        <option value="Iniciar Sesion">Iniciar Sesion</option>
+        <option value="Catalogo De Libros">Catalogo De Libros</option>
+    </select>
+
+    <div id="resultados"></div>
+
+    <script src="menu.js"></script>
+
+</body>
+</html>
