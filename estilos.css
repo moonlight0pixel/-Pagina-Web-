@@ -1,0 +1,105 @@
+body {
+    background: linear-gradient(160deg, #050805 0%, #0a1f0f 45%, #0d2818 100%);
+    color: #d4e8d4; /* verde muy claro, casi blanco, para el texto */
+}
+
+h1 {
+    color: #2ecc71; /* verde esmeralda brillante */
+    text-shadow: 0 0 12px rgba(46, 204, 113, 0.7), 2px 2px 4px rgba(0,0,0,0.9);
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* Línea decorativa tipo destello mágico bajo el título */
+h1::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 3px;
+    margin: 0.5rem auto 0;
+    background: linear-gradient(to right, transparent, #2ecc71, transparent);
+    box-shadow: 0 0 8px rgba(46, 204, 113, 0.8);
+}
+
+/* Imagen con borde mágico */
+img {
+    float: left;
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #2ecc71;
+    box-shadow: 0 0 20px rgba(46, 204, 113, 0.6), 0 0 40px rgba(46, 204, 113, 0.2);
+    padding: 4px;
+    background-color: #0a1f0f;
+    margin: 0 1rem 1rem 0;
+}
+
+
+label {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+/* Select con resplandor esmeralda */
+select {
+    background-color: #0a1f0f;
+    color: #d4e8d4;
+    border: 2px solid #1a5c37;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+}
+
+select:hover, select:focus {
+    border-color: #2ecc71;
+    box-shadow: 0 0 14px rgba(46, 204, 113, 0.7);
+    outline: none;
+}
+
+/* Contenedor de resultados */
+#resultados {
+    border: 2px solid #1a5c37;
+    background-color: rgba(10, 31, 15, 0.7);
+    box-shadow: 0 0 15px rgba(0,0,0,0.6), inset 0 0 10px rgba(46, 204, 113, 0.1);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+#resultados li {
+    background-color: rgba(10, 31, 15, 0.6);
+    border-left: 3px solid #2ecc71;
+    padding: 0.8rem 1rem;
+    margin: 0.6rem 0;
+    border-radius: 2px;
+    list-style: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#resultados {
+    clear: both;
+    /* el resto de tus estilos que ya tenías para #resultados */
+}
+
+#resultados li:hover {
+    background-color: rgba(46, 204, 113, 0.15);
+    transform: translateX(4px);
+}
+
+/* Scrollbar temática */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050805;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1a5c37;
+    border: 1px solid #2ecc71;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2ecc71;
+}
